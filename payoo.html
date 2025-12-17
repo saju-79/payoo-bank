@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-         <link rel="stylesheet" href="payoo.css">
+          
       <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -23,20 +23,22 @@
   <div class="hero-content flex-col lg:flex-row-reverse">
      
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
+      <form class="card-body">
         <fieldset class="fieldset">
           <label class="label">Number</label>
-          <input type="text" class="input" placeholder="Enter your mobale Number" />
+          <input value="12121212211" id="number" type="text" class="input" placeholder="Enter your mobale Number" required />
           <label class="label">PIN</label>
-          <input type="text" class="input" placeholder="Enter your PIN" />
+          <input value="1234" id="pin" type="text" class="input" placeholder="Enter your PIN" required />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-neutral mt-4 bg-[#0874F2] border-none  ">Login</button>
+          <button id="login-btn" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  ">Login</button>
         </fieldset>
-      </div>
+      </form>
     </div>
   </div>
 </div>
     </section>
-    <script src="payoo.js"></script>
+    
+    <script src="login.js"></script>
+    
 </body>
 </html>
