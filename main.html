@@ -18,7 +18,7 @@
                     <h3 class="text-sm font-light ">Available Balance</h3>
                 </div>
             </div>
-            <div class="text-lg font-semibold flex gap-1 btn">
+            <div id="log-out" class="text-lg font-semibold flex gap-1 btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
 </svg>
@@ -113,11 +113,11 @@
             <label class="label">Agent Number</label>
             <input value="12121212121"  id="number" type="text" class="input" placeholder="Enter 11 digit account number" required />
             <label class="label">Amount to Add</label>
-            <input   id="amount" type="text" class="input" placeholder="Add Amount to withdraw" required />
+            <input    id="out-amount" type="text" class="input" placeholder="Add Amount to withdraw" required />
           <label class="label">PIN</label>
-          <input value="1234"  id="addPin" type="text" class="input" placeholder="Pin Number" required />
+          <input value="1234"  id="outPin" type="text" class="input" placeholder="Pin Number" required />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button id="add-money" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  " > Withdraw Money</button>
+          <button id="cash-out" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  " > Withdraw Money</button>
         </fieldset>
       </form>
     </div>
@@ -129,5 +129,6 @@
     <!-- <script src="adddMoney.js"></script> -->
      <script src="recap.js"></script>
      <script src="togolMoney.js"></script>
+     <script src="cashOut.js"></script>
 </body>
 </html>
