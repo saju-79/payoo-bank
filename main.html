@@ -60,13 +60,39 @@
 
 
        </section>
-       <section>
-        <div class="flex justify-around">
-            <h1 class="text-2xl font-bold">Latest Payment</h1>
-            <h3 class="text-xl font-light">View All</h3>
-        </div>
+       <section class="mt-8">
+      
+        <P class="mx-3 font-bold text-2xl">Add Money</P>
+          <div class="  ">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+     
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+         
+      <form class="card-body"> 
+        <label class="label" for="">Select Bank</label>
+        <select class="select">
+            
+            <option disabled selected>Select A Bank</option>
+            <option value="Bikash">Bikash</option>
+          <option value="Nagat">Nagat</option>
+          <option value="dbbl">DBBL</option>
+        </select>
+        <fieldset class="fieldset">
+            <label class="label">Number</label>
+            <input  id="number" type="text" class="input" placeholder="Enter 11 digit account number" required />
+            <label class="label">Amount to Add</label>
+            <input   id="number" type="text" class="input" placeholder="Add Amount to withdraw" required />
+          <label class="label">PIN</label>
+          <input   id="pin" type="text" class="input" placeholder="Pin Number" required />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button id="login-btn" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  ">Login</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
        </section>
- 
+          
     </section>
 </body>
 </html>
