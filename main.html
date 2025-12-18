@@ -14,7 +14,7 @@
             <div class=" flex gap-2">
                 <img class="w-14" src="assets/Group.png" alt="">
                 <div class="">
-                    <h1 class=" text-[#080808] font-extrabold text-2xl">$45000</h1>
+                    <h1  class=" text-[#080808] font-extrabold text-2xl flex ">$ <span id="mainAmount" >4500</span></h1>
                     <h3 class="text-sm font-light ">Available Balance</h3>
                 </div>
             </div>
@@ -31,13 +31,13 @@
         <h3 class="text-lg font-light">Enjoy easy and convenient financial services with us. Cashout charge is low and </h3>
 
           <div class="grid grid-cols-3 gap-2">
-            <div class="border box-1 p-4 items-center text-center rounded-sm">
+            <div id="add" class="border box-1 p-4 items-center text-center rounded-sm">
                    <img class="mx-auto w-8" src="assets/purse1.png" alt="">
                     <h2 class="text-lg font-semibold">Add Money</h2>
             </div>
-            <div class="border box-1 p-4 items-center text-center rounded-sm">
+            <div id="out" class="border box-1 p-4 items-center text-center rounded-sm">
                    <img class="mx-auto w-8" src="assets/money1.png" alt="">
-                    <h2 class="text-lg font-semibold">Add Money</h2>
+                    <h2 class="text-lg font-semibold">Cashout</h2>
             </div>
             <div class="border box-1 p-4 items-center text-center rounded-sm">
                    <img class="mx-auto w-8" src="assets/bonus1.png" alt="">
@@ -60,7 +60,7 @@
 
 
        </section>
-       <section class="mt-8">
+       <section id="add-money" class="mt-8">
       
         <P class="mx-3 font-bold text-2xl">Add Money</P>
           <div class="  ">
@@ -79,13 +79,45 @@
         </select>
         <fieldset class="fieldset">
             <label class="label">Number</label>
-            <input  id="number" type="text" class="input" placeholder="Enter 11 digit account number" required />
+            <input value="12121212121"  id="number" type="text" class="input" placeholder="Enter 11 digit account number" required />
             <label class="label">Amount to Add</label>
-            <input   id="number" type="text" class="input" placeholder="Add Amount to withdraw" required />
+            <input   id="amount" type="text" class="input" placeholder="Add Amount to withdraw" required />
           <label class="label">PIN</label>
-          <input   id="pin" type="text" class="input" placeholder="Pin Number" required />
+          <input value="1234"  id="addPin" type="text" class="input" placeholder="Pin Number" required />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button id="login-btn" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  ">Login</button>
+          <button id="add-money" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  " > Add Money</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+       </section>
+        <section id="cash-out" class="mt-8">
+      
+        <P class="mx-3 font-bold text-2xl">Cash Out</P>
+          <div class="  ">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+     
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+         
+      <form class="card-body"> 
+        <!-- <label class="label" for="">Select Bank</label> -->
+        <!-- <select class="select"> -->
+            <!--  -->
+            <!-- <option disabled selected>Select A Bank</option> -->
+            <!-- <option value="Bikash">Bikash</option> -->
+          <!-- <option value="Nagat">Nagat</option> -->
+          <!-- <option value="dbbl">DBBL</option> -->
+        <!-- </select> -->
+        <fieldset class="fieldset">
+            <label class="label">Agent Number</label>
+            <input value="12121212121"  id="number" type="text" class="input" placeholder="Enter 11 digit account number" required />
+            <label class="label">Amount to Add</label>
+            <input   id="amount" type="text" class="input" placeholder="Add Amount to withdraw" required />
+          <label class="label">PIN</label>
+          <input value="1234"  id="addPin" type="text" class="input" placeholder="Pin Number" required />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button id="add-money" class="btn btn-neutral mt-4 bg-[#0874F2] border-none  " > Withdraw Money</button>
         </fieldset>
       </form>
     </div>
@@ -94,5 +126,8 @@
        </section>
           
     </section>
+    <!-- <script src="adddMoney.js"></script> -->
+     <script src="recap.js"></script>
+     <script src="togolMoney.js"></script>
 </body>
 </html>
