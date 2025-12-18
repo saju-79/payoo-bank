@@ -16,13 +16,13 @@ document.getElementById("cash-out").addEventListener('click',function(event){
              alert(` avaiable blance ${mainAmount}$`)
            }
 
-        }else{
+        }else{ 
             alert('enter valid PIN')
         }
        
-    }else{
+    } else{
         alert('enter amount')
-    }
+}
     
    
 })
